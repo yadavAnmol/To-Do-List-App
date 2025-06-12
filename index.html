@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do's App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>To-Do List App</h1>
-        <div class="task">
-            <input type="text" class="input" placeholder="Enter the task..." required>
-            <div class="buttons">
-                <button class="button add">Add</button>
-                <button class="button show">Show</button>
-                <button class="button edit">Edit</button>
-                <button class="button exit">Exit</button>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="task">
+        <h1><u>My To-Do List</u></h1>
+      </div>
+      <div class="sub_main">
+        <div class="row1">
+          <input
+            type="text"
+            class="sub_row1"
+            id="wordInput"
+            placeholder="Enter word"
+          />
+          <button class="btn" onclick="addWord()">Add</button>
         </div>
+        <div class="flex">
+          <div class="row2">
+            <button class="btn" onclick="goToEditPage()">Edit</button>
+          </div>
+          <div class="row3">
+            <button class="btn" onclick="goToShowPage()">Show</button>
+          </div>
+          <div class="row4">
+            <button class="btn" onclick="goToExitPage()">Exit</button>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
