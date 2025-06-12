@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="task">
+        <h1><u>Edit Task</u></h1>
+      </div>
+      <div class="sub_main">
+        <div class="newPageRow1">
+          <input
+            type="text"
+            class="remove"
+            id="wordRemove"
+            placeholder="Word to remove"
+          />
+          <button class="btn" onclick="removeWord()">Remove</button>
+        </div>
+        <div class="newPageRow2">
+          <input
+            type="text"
+            class="add"
+            id="newWord"
+            placeholder="Add new word"
+          />
+          <button class="btn" onclick="addWordFromEdit()">Add</button>
+        </div>
+        <div class="newPageRow3">
+          <button class="btn" onclick="goToShowPage()">Show</button>
+          <button class="btn" onclick="back()">Back</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
